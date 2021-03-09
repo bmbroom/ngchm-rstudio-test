@@ -1,4 +1,4 @@
-FROM ngchm/ngchm-rstudio-sc:4.0.2
+FROM ngchm/rstudio-ngchm-sc:4.0.2
 
 # Install custom tools, runtimes, etc.
 # For example "bastet", a command-line tetris clone:

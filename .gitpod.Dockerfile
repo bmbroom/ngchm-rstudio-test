@@ -6,4 +6,5 @@ FROM ngchm/rstudio-ngchm-sc:4.0.2
 #
 # More information: https://www.gitpod.io/docs/config-docker/
 
-RUN mkdir /tmp/rstudio && usermod -a -G sudo gitpod
+# Add gitpod to sudo group (before gitpod added to users)
+RUN mkdir /tmp/rstudio && sed -i '/^sudo:/s/$/,gitpod/' /etc/group

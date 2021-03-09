@@ -6,4 +6,4 @@ FROM ngchm/ngchm-rstudio-sc:4.0.2
 #
 # More information: https://www.gitpod.io/docs/config-docker/
 
-mkdir /tmp/rstudio
+RUN mkdir /tmp/rstudio
